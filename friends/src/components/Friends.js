@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth.js";
 
-// import AddFriend from './AddFriend.js'
+import AddFriend from "./AddFriend.js";
 import Friend from "./Friend.js";
 
 const Friends = () => {
@@ -16,7 +16,7 @@ const Friends = () => {
 
   return (
     <>
-      {/* <AddFriend /> */}
+      <AddFriend />
       <h1>The Peeps</h1>
       {friends.map(friend => (
         <div key={friend.id}>
